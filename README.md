@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PHOTOGRAM
+It is an instagram like web app for uploading your picture with social logins and custom login.
+# Table of Contents
+* [Getting Started](#getting-started)
+* [Live Project](#live-project)
+* [Features](#features)
+* [Built with](#built-with)
+* [Author](#author)
+ 
+# <a name="getting-started"></a>Getting Started
+First thing you need to do to use this project is to clone it using the following command -
+```
+git clone https://github.com/soni0611/photogram.git
+```
+Initially you would need to replace the firebase config in the index.html with your own firebase config settings so that it works on your firebase database, for more details on how to do that you can follow the process described [here](https://firebase.google.com/docs/web/setup).
 
-## Available Scripts
+The project is divided into three sections namely Login, adding image and Gallery.
 
-In the project directory, you can run:
 
-### `npm start`
+# <a name="live-project"></a> Live Project
+Photogram is live <a href="https://lit-shelf-28896.herokuapp.com/">here.</a> 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# <a name="features"></a>Features
+* The user can sign up and create a new account. Check for email duplicate scenario and show an appropriate message if the same email is used for login.
+* The user can log in using the previous email/password combination. If email/pass is incorrect to show the appropriate error.
+* If the user successfully creates a new account take him to create a new post form - which will have fields photo, caption etc. Date   will also be stored in database along with these information.
+* After submitting the above form user should automatically be redirected/routed to the photo Gallery page.
+Gallery page should show all cards of logged in user. Only photos uploaded by the same user must be displayed.
+* If user login into existing account he must be redirected to Gallery page if he has 1 or more cards uploaded. If no cards are there he must be redirected to the same form as after signup.
+* Gallery page should also have a link to form page - using button - “Create new card”.
+* The user can also delete cards from gallery page by click on a cross Icon “X” which you can add to all cards in front-end.
+* To maintained loggedIn user use sessions and localStorage.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+# <a name="built-with"></a>Built with
+* <a href="https://reactjs.org/">React JS </a> - Best javascript framework.
+* <a href="https://firebase.google.com/">Firebase</a> - Used for Authentication, Database, Storage and Hosting in thi app.
+* <a href="https://react-bootstrap.github.io/">Bootstrap</a> - Used in designing.
+* <a href="https://semantic-ui.com/">semantic</a> - Used in designing.
+* <a href="https://ant.design/">antd</a> - Used in designing.
+* Programming languages used - HTML5, CSS3, JavaScript
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# <a name="author"></a>Author
+* <b>Shivam Soni  </b>
+<a href="mailto:shivam.soni1998@gmail.com">Email</a>
